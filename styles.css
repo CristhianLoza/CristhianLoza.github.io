@@ -310,3 +310,14 @@ footer { max-width: var(--max); margin: auto; padding: 28px 24px 40px; border-to
   .architecture-grid { grid-template-columns: 1fr; }
   .architecture-note { align-items: flex-start; }
 }
+
+.hero-name {
+  font-size: .92rem;
+  color: var(--text);
+  font-weight: 800;
+  letter-spacing: .01em;
+  margin-bottom: 8px;
+}
+.hero-name span {
+  color: var(--accent-2);
+}
