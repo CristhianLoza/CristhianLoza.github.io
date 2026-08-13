@@ -11,51 +11,50 @@
   <header class="nav">
     <a class="brand" href="#home">CLM<span>.</span></a>
     <nav>
-      <a href="#about">Sobre mí</a>
-      <a href="#experience">Experiencia</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Proyectos</a>
-      <a href="#architecture">Arquitectura</a>
-      <a href="#contact">Contacto</a>
+      <a href="#about" data-es="Sobre mí" data-en="About me">Sobre mí</a>
+      <a href="#experience" data-es="Experiencia" data-en="Experience">Experiencia</a>
+      <a href="#skills" data-es="Skills" data-en="Skills">Skills</a>
+      <a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a>
+      <a href="#architecture" data-es="Arquitectura" data-en="Architecture">Arquitectura</a>
+      <a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a>
     </nav>
-    <a class="nav-cv" href="CV-Cristhian-Loza-Martinez.pdf" download>Descargar CV</a>
+    <div class="language-toggle" aria-label="Language selector"><button id="lang-es" class="lang-btn active" type="button">ES</button><span>/</span><button id="lang-en" class="lang-btn" type="button">EN</button></div><a class="nav-cv" id="nav-cv" href="CV-Cristhian-Loza-Martinez.pdf" download><span data-es="Descargar CV" data-en="Download Resume">Descargar CV</span></a>
   </header>
 
   <main>
     <section id="home" class="hero section">
       <div class="hero-copy">
-        <p class="eyebrow">CRISTHIAN LOZA MARTÍNEZ · SENIOR SOFTWARE DEVELOPER</p>
-        <h1>Construyo soluciones backend <span>robustas y escalables.</span></h1>
+        <p class="eyebrow" id="hero-eyebrow">CRISTHIAN LOZA MARTÍNEZ · SENIOR SOFTWARE DEVELOPER</p>
+        <h1 data-es="Construyo soluciones backend" data-en="Building robust and"><span data-es="robustas y escalables." data-en="scalable backend solutions.">robustas y escalables.</span></h1>
         <p class="lead">
-          Desarrollador de software con más de 8 años de experiencia, especializado en C# y .NET,
-          APIs, microservicios, integración de sistemas, datos y modernización de plataformas empresariales.
+          <span data-es="Desarrollador de software con más de 8 años de experiencia, especializado en C# y .NET, APIs, microservicios, integración de sistemas, datos y modernización de plataformas empresariales." data-en="Software Developer with 8+ years of experience, specialized in C# and .NET, APIs, microservices, system integration, data and modernization of enterprise platforms.">Desarrollador de software con más de 8 años de experiencia, especializado en C# y .NET, APIs, microservicios, integración de sistemas, datos y modernización de plataformas empresariales.</span>
         </p>
         <div class="hero-meta">
-          <span><b>8+</b> años de experiencia</span>
-          <span><b>.NET</b> especialidad principal</span>
-          <span><b>Colombia</b> · Bogotá</span>
+          <span id="meta-experience"><b>8+</b> años de experiencia</span>
+          <span id="meta-dotnet"><b>.NET</b> especialidad principal</span>
+          <span id="meta-location"><b>Colombia</b> · Bogotá</span>
         </div>
         <div class="actions">
-          <a class="btn primary" href="#projects">Ver proyectos</a>
-          <a class="btn secondary" href="CV-Cristhian-Loza-Martinez.pdf" download>Descargar CV</a>
+          <a class="btn primary" href="#projects" data-es="Ver proyectos" data-en="View projects">Ver proyectos</a>
+          <a class="btn secondary" id="hero-cv" href="CV-Cristhian-Loza-Martinez.pdf" download data-es="Descargar CV" data-en="Download Resume">Descargar CV</a>
         </div>
       </div>
       <div class="hero-card">
         <div class="profile-card">
           <div class="avatar">CL</div>
           <div>
-            <p class="profile-name">Cristhian Loza Martínez</p>
-            <p class="profile-role">Senior Software Developer</p>
+            <p class="profile-name" id="profile-name">Cristhian Loza Martínez</p>
+            <p class="profile-role" id="profile-role">Senior Software Developer</p>
           </div>
         </div>
         <div class="architecture-mini">
-          <div class="arch-node">Client</div>
+          <div class="arch-node" id="mini-client">Client</div>
           <div class="arch-line">→</div>
           <div class="arch-node accent-node">API</div>
           <div class="arch-line">→</div>
-          <div class="arch-node">Services</div>
+          <div class="arch-node" id="mini-services">Services</div>
           <div class="arch-line">→</div>
-          <div class="arch-node">Data</div>
+          <div class="arch-node" id="mini-data">Data</div>
         </div>
         <div class="stack-highlight">
           <span>.NET</span><span>C#</span><span>Microservices</span><span>SQL</span>
@@ -65,20 +64,20 @@
 
     <section class="section focus-section">
       <div class="section-heading">
-        <p class="eyebrow">ENFOQUE TÉCNICO</p>
-        <h2>Más que escribir código: diseño soluciones.</h2>
+        <p class="eyebrow" id="focus-eyebrow">ENFOQUE TÉCNICO</p>
+        <h2 id="focus-title">Más que escribir código: diseño soluciones.</h2>
       </div>
       <div class="focus-grid">
-        <article class="focus-card"><span class="focus-icon">01</span><h3>.NET & Backend</h3><p>C# y .NET para APIs, servicios empresariales, procesos y plataformas de alta responsabilidad.</p></article>
-        <article class="focus-card"><span class="focus-icon">02</span><h3>Arquitectura</h3><p>Clean Architecture, DDD, SOLID, microservicios, patrones y separación clara de responsabilidades.</p></article>
-        <article class="focus-card"><span class="focus-icon">03</span><h3>Integración</h3><p>REST, SOAP, GraphQL, servicios especializados, mensajería y comunicación entre sistemas.</p></article>
-        <article class="focus-card"><span class="focus-icon">04</span><h3>Datos & Procesos</h3><p>SQL Server, Oracle, PostgreSQL, MongoDB, optimización de consultas y procesamiento de información.</p></article>
+        <article id="focus-card-1" class="focus-card"><span class="focus-icon">01</span><h3>.NET & Backend</h3><p>C# y .NET para APIs, servicios empresariales, procesos y plataformas de alta responsabilidad.</p></article>
+        <article id="focus-card-2" class="focus-card"><span class="focus-icon">02</span><h3>Arquitectura</h3><p>Clean Architecture, DDD, SOLID, microservicios, patrones y separación clara de responsabilidades.</p></article>
+        <article id="focus-card-3" class="focus-card"><span class="focus-icon">03</span><h3>Integración</h3><p>REST, SOAP, GraphQL, servicios especializados, mensajería y comunicación entre sistemas.</p></article>
+        <article id="focus-card-4" class="focus-card"><span class="focus-icon">04</span><h3>Datos & Procesos</h3><p>SQL Server, Oracle, PostgreSQL, MongoDB, optimización de consultas y procesamiento de información.</p></article>
       </div>
     </section>
     <section id="about" class="section">
       <div class="section-heading">
-        <p class="eyebrow">01 · SOBRE MÍ</p>
-        <h2>Experiencia enfocada en resolver problemas reales.</h2>
+        <p class="eyebrow" id="about-eyebrow">01 · SOBRE MÍ</p>
+        <h2 id="about-title">Experiencia enfocada en resolver problemas reales.</h2>
       </div>
       <div class="about-grid">
         <p>
@@ -96,8 +95,8 @@
 
     <section id="experience" class="section">
       <div class="section-heading">
-        <p class="eyebrow">02 · EXPERIENCIA</p>
-        <h2>Más de 8 años construyendo software.</h2>
+        <p class="eyebrow" id="experience-eyebrow">02 · EXPERIENCIA</p>
+        <h2 id="experience-title">Más de 8 años construyendo software.</h2>
       </div>
       <div class="timeline">
         <article class="timeline-item">
@@ -129,23 +128,23 @@
 
     <section id="skills" class="section">
       <div class="section-heading">
-        <p class="eyebrow">03 · STACK</p>
-        <h2>Un stack amplio, con .NET como núcleo.</h2>
+        <p class="eyebrow" id="stack-eyebrow">03 · STACK</p>
+        <h2 id="stack-title">Un stack amplio, con .NET como núcleo.</h2>
       </div>
       <div class="stack-groups">
-        <div class="stack-group">
+        <div id="stack-group-1" class="stack-group">
           <h3>Backend</h3>
           <div class="skills"><span class="featured-skill">C#</span><span class="featured-skill">.NET</span><span>ASP.NET Core</span><span>Web API</span><span>Entity Framework</span><span>GraphQL</span><span>SOAP</span><span>Python</span></div>
         </div>
-        <div class="stack-group">
+        <div id="stack-group-2" class="stack-group">
           <h3>Arquitectura & integración</h3>
           <div class="skills"><span class="featured-skill">Microservices</span><span>Clean Architecture</span><span>DDD</span><span>SOLID</span><span>CQRS</span><span>Repository</span><span>Unit of Work</span><span>Dependency Injection</span><span>Mensajería / Colas</span></div>
         </div>
-        <div class="stack-group">
+        <div id="stack-group-3" class="stack-group">
           <h3>Datos & plataforma</h3>
           <div class="skills"><span>SQL Server</span><span>Oracle</span><span>PostgreSQL</span><span>MongoDB</span><span>Docker</span><span>Git</span><span>Azure</span></div>
         </div>
-        <div class="stack-group">
+        <div id="stack-group-4" class="stack-group">
           <h3>Frontend & otros</h3>
           <div class="skills"><span>Angular</span><span>JavaScript</span><span>TypeScript</span><span>MVC</span><span>jQuery</span><span>DevExtreme</span><span>Bootstrap</span></div>
         </div>
@@ -154,8 +153,8 @@
 
     <section id="projects" class="section">
       <div class="section-heading">
-        <p class="eyebrow">04 · PROYECTOS</p>
-        <h2>Experiencia aplicada a diferentes tipos de soluciones.</h2>
+        <p class="eyebrow" id="projects-eyebrow">04 · PROYECTOS</p>
+        <h2 id="projects-title">Experiencia aplicada a diferentes tipos de soluciones.</h2>
         <p class="section-note">Los proyectos se describen de forma general para proteger información confidencial de clientes y empresas.</p>
       </div>
 
@@ -168,7 +167,7 @@
       </div>
 
       <div class="projects interactive-projects">
-        <article class="project project-card" data-category="dotnet architecture">
+        <article id="project-1" class="project project-card" data-category="dotnet architecture">
           <div class="project-top"><span class="project-number">01</span><span class="project-label">.NET</span></div>
           <h3>Plataformas empresariales</h3>
           <p>Desarrollo y evolución de soluciones empresariales con .NET, APIs y componentes backend orientados a procesos críticos.</p>
@@ -176,7 +175,7 @@
           <div class="project-details"><strong>Enfoque</strong><p>Diseño de servicios, separación de responsabilidades, mantenibilidad, rendimiento e integración con sistemas existentes.</p><div class="tags"><span>C#</span><span>.NET</span><span>Web API</span><span>Clean Architecture</span></div></div>
         </article>
 
-        <article class="project project-card" data-category="dotnet integration architecture">
+        <article id="project-2" class="project project-card" data-category="dotnet integration architecture">
           <div class="project-top"><span class="project-number">02</span><span class="project-label">MICROSERVICIOS</span></div>
           <h3>Arquitecturas distribuidas</h3>
           <p>Diseño y desarrollo de servicios independientes para dividir dominios, escalar componentes y facilitar la evolución de plataformas.</p>
@@ -184,7 +183,7 @@
           <div class="project-details"><strong>Enfoque</strong><p>Microservicios, APIs, comunicación entre servicios, inyección de dependencias, patrones de diseño y observabilidad.</p><div class="tags"><span>.NET</span><span>Microservices</span><span>DDD</span><span>SOLID</span></div></div>
         </article>
 
-        <article class="project project-card" data-category="integration architecture">
+        <article id="project-3" class="project project-card" data-category="integration architecture">
           <div class="project-top"><span class="project-number">03</span><span class="project-label">INTEGRACIÓN</span></div>
           <h3>Servicios y mensajería</h3>
           <p>Integración de aplicaciones mediante APIs, servicios y mecanismos de comunicación asíncrona para desacoplar procesos.</p>
@@ -192,7 +191,7 @@
           <div class="project-details"><strong>Enfoque</strong><p>REST, SOAP, GraphQL, colas y procesamiento asíncrono como parte de arquitecturas orientadas a integración.</p><div class="tags"><span>REST</span><span>SOAP</span><span>GraphQL</span><span>Queues</span></div></div>
         </article>
 
-        <article class="project project-card" data-category="data dotnet">
+        <article id="project-4" class="project project-card" data-category="data dotnet">
           <div class="project-top"><span class="project-number">04</span><span class="project-label">DATOS</span></div>
           <h3>Procesamiento y gestión de información</h3>
           <p>Soluciones conectadas a diferentes motores de datos, con énfasis en rendimiento, consistencia y procesos empresariales.</p>
@@ -200,7 +199,7 @@
           <div class="project-details"><strong>Enfoque</strong><p>Entity Framework, migraciones, SQL, procedimientos almacenados y trabajo con bases relacionales y NoSQL.</p><div class="tags"><span>EF Core</span><span>SQL Server</span><span>Oracle</span><span>PostgreSQL</span><span>MongoDB</span></div></div>
         </article>
 
-        <article class="project project-card" data-category="dotnet architecture">
+        <article id="project-5" class="project project-card" data-category="dotnet architecture">
           <div class="project-top"><span class="project-number">05</span><span class="project-label">MODERNIZACIÓN</span></div>
           <h3>Modernización de plataformas legadas</h3>
           <p>Evolución de aplicaciones existentes, incorporando nuevas arquitecturas, servicios y tecnologías sin perder continuidad operativa.</p>
@@ -208,7 +207,7 @@
           <div class="project-details"><strong>Enfoque</strong><p>Refactorización progresiva, integración con sistemas existentes y transición hacia soluciones más mantenibles.</p><div class="tags"><span>C#</span><span>.NET</span><span>MVC</span><span>JavaScript</span></div></div>
         </article>
 
-        <article class="project project-card" data-category="dotnet">
+        <article id="project-6" class="project project-card" data-category="dotnet">
           <div class="project-top"><span class="project-number">06</span><span class="project-label">FULL STACK</span></div>
           <h3>Aplicaciones web</h3>
           <p>Participación en proyectos frontend y backend, conectando interfaces con servicios y procesos empresariales.</p>
@@ -221,16 +220,13 @@
     
     <section id="architecture" class="section architecture-section">
       <div class="section-heading">
-        <p class="eyebrow">05 · ARQUITECTURA</p>
-        <h2>Pienso la solución antes de pensar en el código.</h2>
-        <p class="section-note">
-          Experiencia trabajando con diferentes estilos de arquitectura, integración de servicios,
-          separación de responsabilidades y evolución de plataformas empresariales.
-        </p>
+        <p class="eyebrow" id="architecture-eyebrow">05 · ARQUITECTURA</p>
+        <h2 id="architecture-title">Pienso la solución antes de pensar en el código.</h2>
+        <p class="section-note" id="architecture-note">Experiencia trabajando con diferentes estilos de arquitectura, integración de servicios, separación de responsabilidades y evolución de plataformas empresariales.</p>
       </div>
 
       <div class="architecture-grid">
-        <article class="architecture-card featured-architecture">
+        <article id="architecture-card-1" class="architecture-card featured-architecture">
           <div class="architecture-card-top">
             <span class="architecture-type">01 · MICROSERVICIOS</span>
             <span class="architecture-badge">ESCALABLE</span>
@@ -246,7 +242,7 @@
           <div class="tags"><span>.NET</span><span>REST</span><span>DDD</span><span>Docker</span></div>
         </article>
 
-        <article class="architecture-card">
+        <article id="architecture-card-2" class="architecture-card">
           <div class="architecture-card-top">
             <span class="architecture-type">02 · ASÍNCRONA</span>
             <span class="architecture-badge">EVENTOS</span>
@@ -261,7 +257,7 @@
           <div class="tags"><span>Messaging</span><span>Queues</span><span>Workers</span><span>Async</span></div>
         </article>
 
-        <article class="architecture-card">
+        <article id="architecture-card-3" class="architecture-card">
           <div class="architecture-card-top">
             <span class="architecture-type">03 · CLEAN ARCHITECTURE</span>
             <span class="architecture-badge">MANTENIBLE</span>
@@ -277,7 +273,7 @@
           <div class="tags"><span>SOLID</span><span>DDD</span><span>CQRS</span><span>DI</span></div>
         </article>
 
-        <article class="architecture-card">
+        <article id="architecture-card-4" class="architecture-card">
           <div class="architecture-card-top">
             <span class="architecture-type">04 · INTEGRACIÓN</span>
             <span class="architecture-badge">ENTERPRISE</span>
@@ -301,8 +297,8 @@
     </section>
 
     <section id="contact" class="section contact">
-      <p class="eyebrow">06 · CONTACTO</p>
-      <h2>¿Hablamos?</h2>
+      <p class="eyebrow" id="contact-eyebrow">06 · CONTACTO</p>
+      <h2 id="contact-title">¿Hablamos?</h2>
       <p>Estoy abierto a nuevas oportunidades Backend y .NET, especialmente en proyectos donde pueda aportar experiencia técnica y seguir creciendo.</p>
       <div class="contact-links">
         <a class="contact-primary" href="CV-Cristhian-Loza-Martinez.pdf" download>Descargar CV</a>
